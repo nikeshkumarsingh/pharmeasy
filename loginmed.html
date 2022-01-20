@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         #nav{
+             display:flex;
+             background:rgb(16,132,126);
+             margin:auto;
+            
+         }
+         #logopharm{
+           height:70px;
+         }
+         #nav>div{
+             
+             color:white;
+             margin:auto;
+             font-size:22px;
+         }
+         #imgcont{
+             margin:auto;
+         }
+         #nav>div:hover{
+             text-decoration: underline;
+         }
           body{
               text-align:center;
           }
@@ -38,9 +59,19 @@
     </style>
 </head>
 <body>
-    <div id="logo">
-        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
-    </div>
+    <div id="nav">
+        <div>
+            <img id="logopharm" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+        </div>
+        <div id="omed" onclick="window.location.href='med.html'">Order Medicine</div>
+        <div id="hcp">HealthCare product</div>
+        <div id="lt">Lab Test</div>
+        <div id="sup" onclick="window.location.href='signupmed.html'">Login/SignUp</div>
+        <div id="cart" onclick="window.location.href='cartmed.html'">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">
+            <span>Cart</span>
+        </div>
+     </div>
     <div id="container">
         <h1>Log-In</h1>
         <form>
